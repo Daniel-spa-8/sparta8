@@ -73,19 +73,19 @@
             let phone = $('#order_phone').val();
 
             if (name == '') {
-                alert('이름을 입력해주세요')
+                alert('이름을 입력해주세요!')
                 $('#order_name').focus()
                 return                    // 처음에 다음 항목으로 넘기는 법을 몰라서 헤매다가 겨우 어찌 하긴 했는데요.return 이라는 의미가 무엇인지 모르겠습니다. 
             } else if (count == '') {    // 왜 '이름'다음에 '수량을 입력해주세요'로 안넘어가고 바로'주소'로 넘어가는지 도통 모르겠습니다. 
-                alert('수량을 입력해주세요')
+                alert('수량을 입력해주세요!')
                 $('#order_count').focus()
                 return
             } else if (address == '') {
-                alert('주소를 입력해주세요')
+                alert('주소를 입력해주세요!')
                 $('#order_address').focus()
                 return
             } else if (phone == '') {
-                alert('휴대폰번호를 입력해주세요')
+                alert('휴대폰번호를 입력해주세요!')
                 $('#order_phone').focus()
                 return
             } else if (!isCellPhone(phone)) {
